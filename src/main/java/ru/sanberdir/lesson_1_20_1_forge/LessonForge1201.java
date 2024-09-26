@@ -28,6 +28,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import ru.sanberdir.lesson_1_20_1_forge.items.InitItems;
+import ru.sanberdir.lesson_1_20_1_forge.tab.CreativeLessonTab;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(LessonForge1201.MODID)
@@ -45,8 +47,10 @@ public class LessonForge1201 {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-
-
+        // Регистрация класса предметов
+        InitItems.register(modEventBus);
+        // Регистрация класса креатив табов
+        CreativeLessonTab.register(modEventBus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
