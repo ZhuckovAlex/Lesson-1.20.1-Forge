@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import ru.sanberdir.lesson_1_20_1_forge.LessonForge1201;
+import ru.sanberdir.lesson_1_20_1_forge.blocks.InitBlocks;
 import ru.sanberdir.lesson_1_20_1_forge.items.InitItems;
 
 public class CreativeLessonTab extends CreativeModeTab {
@@ -23,14 +24,12 @@ public class CreativeLessonTab extends CreativeModeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(InitItems.TIGER_STONE.get()))
                     .title(Component.translatable("creative_tab.lesson_1_20_1_forge"))
                     .displayItems((pParameters, pOutput) -> {
+                        //Blocks
+                        pOutput.accept(InitBlocks.DICE_BLOCK.get());
                         //Items
                         pOutput.accept(InitItems.TIGER_STONE.get());
                         pOutput.accept(InitItems.CALCINE.get());
 
                     })
                     .build());
-
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
 }

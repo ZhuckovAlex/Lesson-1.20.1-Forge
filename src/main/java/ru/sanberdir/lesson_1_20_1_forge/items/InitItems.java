@@ -25,8 +25,4 @@ public class InitItems {
                     .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 120, 0), 1F)
                     .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 2), 0.1F)
                     .build())));
-
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
 }

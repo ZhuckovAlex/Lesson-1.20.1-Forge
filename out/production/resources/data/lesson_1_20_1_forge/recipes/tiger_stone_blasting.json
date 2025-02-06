@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:blasting",
+  "group": "tiger_stone",
+  "category": "misc",
+  "ingredient":
+  [
+    {
+      "tag": "minecraft:acacia_logs"
+    },
+    {
+      "item": "minecraft:acacia_sapling"
+    },
+    {
+      "item": "minecraft:acacia_stairs"
+    }
+  ],
+  "result": "lesson_1_20_1_forge:tiger_stone",
+  "experience": 5,
+  "cookingtime": 5
+}
