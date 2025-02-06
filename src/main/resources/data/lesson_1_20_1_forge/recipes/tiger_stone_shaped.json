@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "h": [
+      {
+        "item": "minecraft:cobblestone"
+      },
+      {
+        "item": "minecraft:diorite"
+      }
+    ],
+    "d": {
+      "item": "minecraft:honey_block"
+    }
+  },
+  "pattern": [
+    " h ",
+    "d d",
+    " h "
+  ],
+  "result": {
+    "item": "lesson_1_20_1_forge:tiger_stone",
+    "count": 4
+  },
+  "show_notification": true
+}

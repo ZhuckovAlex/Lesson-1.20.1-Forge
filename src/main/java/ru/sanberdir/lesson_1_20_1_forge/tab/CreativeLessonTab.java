@@ -25,6 +25,7 @@ public class CreativeLessonTab extends CreativeModeTab {
                     .displayItems((pParameters, pOutput) -> {
                         //Items
                         pOutput.accept(InitItems.TIGER_STONE.get());
+                        pOutput.accept(InitItems.CALCINE.get());
 
                     })
                     .build());
