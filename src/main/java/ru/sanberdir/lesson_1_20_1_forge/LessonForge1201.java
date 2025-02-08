@@ -29,6 +29,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import ru.sanberdir.lesson_1_20_1_forge.blocks.InitBlocks;
+import ru.sanberdir.lesson_1_20_1_forge.blocks.catch_fire.ModFlammableBlocks;
 import ru.sanberdir.lesson_1_20_1_forge.items.InitItems;
 import ru.sanberdir.lesson_1_20_1_forge.tab.CreativeLessonTab;
 
@@ -65,7 +66,7 @@ public class LessonForge1201 {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(ModFlammableBlocks::registerFlammableBlocks);
     }
 
     // Add the example block item to the building blocks tab

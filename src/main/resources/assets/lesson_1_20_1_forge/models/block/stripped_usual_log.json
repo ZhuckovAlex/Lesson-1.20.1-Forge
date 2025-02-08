@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "lesson_1_20_1_forge:block/stripped_usual_log_top",
+    "side": "lesson_1_20_1_forge:block/stripped_usual_log"
+  }
+}

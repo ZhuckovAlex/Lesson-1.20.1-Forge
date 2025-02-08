@@ -26,6 +26,11 @@ public class CreativeLessonTab extends CreativeModeTab {
                     .displayItems((pParameters, pOutput) -> {
                         //Blocks
                         pOutput.accept(InitBlocks.DICE_BLOCK.get());
+                        pOutput.accept(InitBlocks.USUAL_PLANKS.get());
+                        pOutput.accept(InitBlocks.USUAL_LOG.get());
+                        pOutput.accept(InitBlocks.USUAL_WOOD.get());
+                        pOutput.accept(InitBlocks.STRIPPED_USUAL_LOG.get());
+                        pOutput.accept(InitBlocks.STRIPPED_USUAL_WOOD.get());
                         //Items
                         pOutput.accept(InitItems.TIGER_STONE.get());
                         pOutput.accept(InitItems.CALCINE.get());

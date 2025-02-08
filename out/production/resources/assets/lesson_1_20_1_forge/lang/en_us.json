@@ -1,6 +1,11 @@
 {
   "block.lesson_1_20_1_forge.dice_block": "Kostya Block",
+  "block.lesson_1_20_1_forge.usual_planks": "Usual Planks",
+  "block.lesson_1_20_1_forge.usual_log": "Usual Log",
+  "block.lesson_1_20_1_forge.usual_wood": "Usual Wood",
+  "block.lesson_1_20_1_forge.stripped_usual_log": "Stripped Usual Log",
+  "block.lesson_1_20_1_forge.stripped_usual_wood": "Stripped Usual Wood",
   "creative_tab.lesson_1_20_1_forge": "Lesson 1.20.1",
-  "item.lesson_1_20_1_forge.tiger_stone": "Tiger stone",
+  "item.lesson_1_20_1_forge.tiger_stone": "Tiger Stone",
   "item.lesson_1_20_1_forge.calcine": "Calcine"
 }
