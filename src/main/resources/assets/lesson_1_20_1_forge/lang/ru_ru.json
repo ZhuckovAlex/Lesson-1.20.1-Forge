@@ -2,10 +2,14 @@
   "block.lesson_1_20_1_forge.usual_planks": "Обыкновенные доски",
   "block.lesson_1_20_1_forge.usual_log": "Обычное бревно",
   "block.lesson_1_20_1_forge.usual_wood": "Обычная древесина",
+  "block.lesson_1_20_1_forge.usual_leaves": "Обычная листва",
+  "block.lesson_1_20_1_forge.usual_sapling": "Обычный саженец",
   "block.lesson_1_20_1_forge.stripped_usual_log": "Обтёсанное обычное бревно",
   "block.lesson_1_20_1_forge.stripped_usual_wood": "Обтёсанная обычная древесина",
   "block.lesson_1_20_1_forge.dice_block": "Кубик Кости",
   "creative_tab.lesson_1_20_1_forge": "Урок 1.20.1",
   "item.lesson_1_20_1_forge.tiger_stone": "Тигровый камень",
-  "item.lesson_1_20_1_forge.calcine": "Огарок"
+  "item.lesson_1_20_1_forge.calcine": "Огарок",
+  "item.lesson_1_20_1_forge.usual_leaves": "Обычная листва",
+  "item.lesson_1_20_1_forge.usual_sapling": "Обычный саженец"
 }

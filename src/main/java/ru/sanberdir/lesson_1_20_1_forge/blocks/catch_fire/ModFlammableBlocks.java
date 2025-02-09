@@ -27,6 +27,7 @@ public class ModFlammableBlocks {
             //       0: огонь не распространяется через блок (например, камень).
             //       100: огонь распространяется очень быстро (например, листья).
 
+            setFlammableMethod.invoke(fireBlock, InitBlocks.USUAL_LEAVES.get(), 30, 60);
             setFlammableMethod.invoke(fireBlock, InitBlocks.USUAL_LOG.get(), 5, 5);
             setFlammableMethod.invoke(fireBlock, InitBlocks.USUAL_WOOD.get(), 5, 5);
             setFlammableMethod.invoke(fireBlock, InitBlocks.STRIPPED_USUAL_LOG.get(), 5, 5);

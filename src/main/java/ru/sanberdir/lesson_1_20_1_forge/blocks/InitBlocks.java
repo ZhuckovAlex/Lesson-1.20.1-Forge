@@ -2,9 +2,7 @@ package ru.sanberdir.lesson_1_20_1_forge.blocks;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -14,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import ru.sanberdir.lesson_1_20_1_forge.LessonForge1201;
 import ru.sanberdir.lesson_1_20_1_forge.blocks.custom.StrippedWoodLogs;
 import ru.sanberdir.lesson_1_20_1_forge.items.InitItems;
+import ru.sanberdir.lesson_1_20_1_forge.world.tree.UsualTree;
 
 import java.util.function.Supplier;
 
@@ -41,6 +40,13 @@ public class InitBlocks {
     public static final RegistryObject<Block> STRIPPED_USUAL_WOOD = registerBlock("stripped_usual_wood",
             () -> new StrippedWoodLogs(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASS)
                     .strength(2.0F).sound(SoundType.WOOD).ignitedByLava()));
+
+
+    public static final RegistryObject<Block> USUAL_SAPLING = BLOCKS.register("usual_sapling",
+            () -> new SaplingBlock(new UsualTree(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> USUAL_LEAVES = BLOCKS.register("usual_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

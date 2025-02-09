@@ -10,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
@@ -87,7 +88,10 @@ public class LessonForge1201 {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            event.enqueueWork(() -> {
+                ComposterBlock.COMPOSTABLES.put(InitItems.USUAL_LEAVES.get(), 0.3f);
+                ComposterBlock.COMPOSTABLES.put(InitItems.USUAL_SAPLING.get(), 0.2f);
+            });
         }
     }
 }

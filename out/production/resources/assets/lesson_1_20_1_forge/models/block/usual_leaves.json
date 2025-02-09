@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "lesson_1_20_1_forge:block/usual_leaves"
+  }
+}
